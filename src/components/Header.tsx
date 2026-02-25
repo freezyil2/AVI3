@@ -5,6 +5,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { destinations, ships, cruiseLines } from '../data';
 
 export default function Header() {
+  import logoImg from '../assets/logoW.png';
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState('');
@@ -47,13 +48,12 @@ export default function Header() {
     >
       <div className="container mx-auto px-6 flex items-center justify-between">
         {/* Logo */}
-        <Link to="/" className="flex items-center gap-2 group">
-          <div className="w-10 h-10 bg-gold rounded-full flex items-center justify-center group-hover:rotate-12 transition-transform shadow-lg shadow-gold/20">
-            <Anchor className="text-ocean-deep" size={24} />
-          </div>
-          <span className="text-2xl font-black tracking-tighter text-pearl">
-            קרוז <span className="text-gold">לכול</span>
-          </span>
+        <Link to="/" className="flex items-center group">
+          <img 
+            src={logoImg} 
+            alt="קרוז לכול" 
+            className="h-16 w-auto object-contain transition-transform duration-300 group-hover:scale-105" 
+          />
         </Link>
 
         {/* Desktop Nav */}
