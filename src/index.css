@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;600;700&family=Heebo:wght@300;400;700;900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Assistant", "Heebo", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Heebo", sans-serif;
+  
+  --color-ocean-deep: #001B3D;
+  --color-pearl: #F5F2ED;
+  --color-gold: #D4AF37;
+  --color-turquoise: #40E0D0;
+}
+
+@layer base {
+  html {
+    direction: rtl;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-ocean-deep text-pearl font-sans overflow-x-hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display;
+  }
+}
+
+.glass-morphism {
+  @apply bg-white/10 backdrop-blur-md border border-white/20;
+}
+
+.text-gradient-gold {
+  @apply bg-clip-text text-transparent bg-linear-to-r from-gold via-yellow-200 to-gold;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-ocean-deep;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-gold/50 rounded-full hover:bg-gold;
+}
