@@ -3,9 +3,10 @@ import { Search, Menu, X, Anchor } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Link, useNavigate } from 'react-router-dom';
 import { destinations, ships, cruiseLines } from '../data';
+import logoImg from '../assets/logoW.png';
+
 
 export default function Header() {
-  import logoImg from '../assets/logoW.png';
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState('');
