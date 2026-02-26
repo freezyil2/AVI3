@@ -1,7 +1,8 @@
 backend:
   name: github
-  repo: freezyil2/AVI3 # שם ה-repo שלך
+  repo: freezyil2/AVI3 # שם המשתמש והפרויקט שלך מתוך התמונה
   branch: main
+  base_url: https://avi-3.vercel.app/ # כאן תשים את הדומיין שתחבר לורסל
   
 media_folder: "public/images" # איפה תמונות יישמרו
 public_folder: "/images"
@@ -16,4 +17,5 @@ collections:
       - { label: "כותרת", name: "title", widget: "string" }
       - { label: "תאריך פרסום", name: "date", widget: "datetime" }
       - { label: "תוכן", name: "body", widget: "markdown" }
+
 
