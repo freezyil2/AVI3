@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>קרוז לכול - Cruise For All</title>
+    <!-- Step 1: Start: Load OVExplore library on head section. -->
+    <script language="javascript" type="text/javascript" src="https://content.cdn705.com/Content/WebApps/OdyVExplore/OVExplore.min.js"></script>
+    <!-- Step 1: End -->
+    <!-- Step 2: Start: Init OVExplore object on head section with your preferences. -->
+    <script>
+      window.OVExplore = {
+        preferences: {
+          languageId: "9", // 1 - english, 9 - hebrew
+          siteItemId: "1087035",
+          showStateNCountryWithPorts: true,
+          resultWindowType: "_blank", // Options: 1._blank 2._self 3._top
+          cruiseSearchFields: {				
+            basic: ["destination","cruiseline","ship","departureport","sailingdate","duration"],
+          },
+        },
+        siteSettings: {
+          productType: "cruise",
+          domain: "book.cruise4all.co.il",
+          numberOfCols: 6,
+          themeColor: "#ffffff|#2d67b1|#000000|#ffffff", // specfies primary | secondary| text color | button text color
+        },
+        cruiseSearchSettings: {
+          portPriority: "HFA",
+          destinationPriority: "75,15,142,122,9,1,19,21,29,32",
+        },
+        cruiseWidgetSettings: {
+          widgetStyle: "vue_multiselect", // Options 1. vue_multiselect 2. simple_select
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+
