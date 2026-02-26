@@ -1,0 +1,17 @@
+backend:
+  name: git-gateway
+  branch: main # וודא שזה שם הבראנץ' שלך
+
+media_folder: "public/images" # איפה תמונות יישמרו
+public_folder: "/images"
+
+collections:
+  - name: "blog"
+    label: "פוסטים"
+    folder: "content/posts" # התיקייה שבה נמצאים קבצי ה-Markdown
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "כותרת", name: "title", widget: "string" }
+      - { label: "תאריך פרסום", name: "date", widget: "datetime" }
+      - { label: "תוכן", name: "body", widget: "markdown" }
