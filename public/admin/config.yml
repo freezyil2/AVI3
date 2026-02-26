@@ -1,17 +1,17 @@
 backend:
-  name: github
-  repo: freezyil2/AVI3 # שם המשתמש והרפו שלך
-  branch: main
-  base_url: https://static-cms-proxy.vercel.app # שרת מתווך חינמי שעוזר להתחברות
-  
-media_folder: "public/images"
+  name: git-gateway
+  branch: main # וודא שזה שם הבראנץ' שלך
+
+media_folder: "public/images" # איפה תמונות יישמרו
 public_folder: "/images"
 
 collections:
   - name: "blog"
     label: "פוסטים"
-    folder: "src/content/blog" # וודא שהתיקייה הזו קיימת אצלך
+    folder: "content/posts" # התיקייה שבה נמצאים קבצי ה-Markdown
     create: true
+    slug: "{{slug}}"
     fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "כותרת", name: "title", widget: "string" }
+      - { label: "תאריך פרסום", name: "date", widget: "datetime" }
+      - { label: "תוכן", name: "body", widget: "markdown" }
