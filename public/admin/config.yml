@@ -1,21 +1,17 @@
 backend:
   name: github
-  repo: freezyil2/AVI3 # שם המשתמש והפרויקט שלך מתוך התמונה
+  repo: freezyil2/AVI3 # שם המשתמש והרפו שלך
   branch: main
-  base_url: https://avi-3.vercel.app/ # כאן תשים את הדומיין שתחבר לורסל
+  base_url: https://static-cms-proxy.vercel.app # שרת מתווך חינמי שעוזר להתחברות
   
-media_folder: "public/images" # איפה תמונות יישמרו
+media_folder: "public/images"
 public_folder: "/images"
 
 collections:
   - name: "blog"
     label: "פוסטים"
-    folder: "content/posts" # התיקייה שבה נמצאים קבצי ה-Markdown
+    folder: "src/content/blog" # וודא שהתיקייה הזו קיימת אצלך
     create: true
-    slug: "{{slug}}"
     fields:
-      - { label: "כותרת", name: "title", widget: "string" }
-      - { label: "תאריך פרסום", name: "date", widget: "datetime" }
-      - { label: "תוכן", name: "body", widget: "markdown" }
-
-
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }
