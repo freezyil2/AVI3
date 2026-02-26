@@ -1,0 +1,17 @@
+backend:
+  name: git-gateway
+  branch: main # או master, לפי הגיט שלך
+
+media_folder: "public/images"
+public_folder: "/images"
+
+collections:
+  - name: "config"
+    label: "הגדרות אתר"
+    files:
+      - label: "נתוני מטא"
+        name: "metadata"
+        file: "metadata.json" # כאן המערכת תעדכן מחירים ומבזקים
+        fields:
+          - { label: "מחיר", name: "price", widget: "string" }
+          - { label: "מבזק", name: "alert", widget: "string" }
