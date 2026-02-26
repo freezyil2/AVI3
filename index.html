@@ -1,13 +1,13 @@
 <!doctype html>
-<html lang="en">
+<html lang="he" dir="rtl">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>קרוז לכול - Cruise For All</title>
-    <!-- Step 1: Start: Load OVExplore library on head section. -->
+    
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
     <script language="javascript" type="text/javascript" src="https://content.cdn705.com/Content/WebApps/OdyVExplore/OVExplore.min.js"></script>
-    <!-- Step 1: End -->
-    <!-- Step 2: Start: Init OVExplore object on head section with your preferences. -->
     <script>
       window.OVExplore = {
         preferences: {
@@ -38,6 +38,17 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+
+    <script>
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", user => {
+          if (!user) {
+            window.netlifyIdentity.on("login", () => {
+              document.location.href = "/admin/";
+            });
+          }
+        });
+      }
+    </script>
   </body>
 </html>
-
