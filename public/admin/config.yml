@@ -1,6 +1,6 @@
 backend:
   name: git-gateway
-  branch: main # וודא שזה שם הבראנץ' שלך
+  branch: main #וודא שזה שם הבראנץ' שלך
 
 media_folder: "public/images" # איפה תמונות יישמרו
 public_folder: "/images"
@@ -15,3 +15,4 @@ collections:
       - { label: "כותרת", name: "title", widget: "string" }
       - { label: "תאריך פרסום", name: "date", widget: "datetime" }
       - { label: "תוכן", name: "body", widget: "markdown" }
+
