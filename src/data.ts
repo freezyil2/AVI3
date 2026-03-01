@@ -130,109 +130,124 @@ export const destinations: Destination[] = [
 
 export const ships: Ship[] = [
   {
-    id: 'ocean-majesty',
+    id: 'symphony-of-the-seas',
     type: 'ship',
-    name: 'Ocean Majesty',
+    name: 'Symphony of the Seas',
     cruiseLine: 'Royal Caribbean',
-    description: 'ספינת הדגל של הצי שלנו. פאר מודרני המשלב נוחות מקסימלית עם טכנולוגיה ירוקה.',
-    image: 'https://picsum.photos/seed/ship1/1200/800',
+    description: 'אוניית הנוסעים הגדולה בעולם בעת השקתה (2018). פארק שעשועים, זירת החלקה על הקרח, טיילת Boardwalk ואזור Central Park פנימי עם צמחייה אמיתית.',
+    image: 'https://picsum.photos/seed/symphony/1200/800',
     specs: {
       length: '362 מטר',
       speed: '22 קשר',
-      capacity: '6,780 נוסעים',
-      tonnage: '228,000 טון'
+      capacity: '6,680 נוסעים',
+      tonnage: '228,081 טון'
     },
-    features: ['בריכת אינסוף', 'תיאטרון תלת-ממד', 'ספא יוקרתי', 'מסעדות שף']
+    features: ['זירת החלקה על הקרח', 'פארק שעשועים', 'אזור Central Park פנימי', 'מסעדות שף רבות']
   },
   {
-    id: 'arctic-explorer',
+    id: 'odyssey-of-the-seas',
     type: 'ship',
-    name: 'Arctic Explorer',
+    name: 'Odyssey of the Seas',
+    cruiseLine: 'Royal Caribbean',
+    description: 'אוניית Quantum Ultra Class הפועלת מאירופה והקריביים. סימולטור צניחה חופשית, מצלמת תצפית בגובה 90 מטר ומופעים מהשורה הראשונה.',
+    image: 'https://picsum.photos/seed/odyssey/1200/800',
+    specs: {
+      length: '347 מטר',
+      speed: '22 קשר',
+      capacity: '4,198 נוסעים',
+      tonnage: '167,704 טון'
+    },
+    features: ['North Star – מצלמת תצפית מעל הים', 'RipCord – סימולטור צניחה', 'SeaPlex – מגרש ספורט מתקדם', 'Two70 – מופעים חדשניים']
+  },
+  {
+    id: 'ms-roald-amundsen',
+    type: 'ship',
+    name: 'MS Roald Amundsen',
     cruiseLine: 'Hurtigruten',
-    description: 'ספינת מחקר משוכללת המיועדת להפלגות באזורי הקוטב. עמידה בקרח ומצוידת בציוד תצפית מתקדם.',
-    image: 'https://picsum.photos/seed/ship2/1200/800',
+    description: 'ספינת משלחות היברידית ראשונה בעולם, פועלת באלסקה, אנטארקטיקה ואיים מרוחקים. עיצוב נורדי, מסעדות גורמה ומרפסות תצפית פנורמיות.',
+    image: 'https://picsum.photos/seed/roaldamundsen/1200/800',
     specs: {
-      length: '150 מטר',
-      speed: '16 קשר',
-      capacity: '200 נוסעים',
-      tonnage: '12,000 טון'
+      length: '140 מטר',
+      speed: '15 קשר',
+      capacity: '530 נוסעים',
+      tonnage: '20,889 טון'
     },
-    features: ['צוללת מחקר', 'מסוק תצפית', 'מעבדה ימית', 'מרפסות פנורמיות']
+    features: ['מנוע היברידי', 'מרפסות תצפית 360°', 'סאונה וחלונות זכוכית', 'מסעדות גורמה סקנדינביות']
   },
   {
-    id: 'golden-yacht',
+    id: 'scenic-eclipse',
     type: 'ship',
-    name: 'Golden Yacht',
+    name: 'Scenic Eclipse',
     cruiseLine: 'Scenic Luxury Cruises',
-    description: 'חווית בוטיק אקסקלוסיבית. יאכטה פרטית המציעה שירות אישי וגישה לנמלים הקטנים והנסתרים ביותר.',
-    image: 'https://picsum.photos/seed/ship3/1200/800',
+    description: 'יאכטת משלחות "6 כוכבים" עם הצוללת והמסוק האישיים שלה. 10 מסעדות, ספא יוקרתי ושירות אישי לכל אורח.',
+    image: 'https://picsum.photos/seed/sceniceclipse/1200/800',
     specs: {
-      length: '110 מטר',
-      speed: '18 קשר',
-      capacity: '100 נוסעים',
-      tonnage: '5,000 טון'
+      length: '168 מטר',
+      speed: '17 קשר',
+      capacity: '228 נוסעים',
+      tonnage: '17,545 טון'
     },
-    features: ['שירות באטלר אישי', 'מרתף יינות', 'סיפון שיזוף פרטי', 'ציוד ספורט מים']
+    features: ['צוללת מחקר', 'מסוק תצפית', 'ספא 550 מ"ר', 'מסעדות גורמה']
   },
   {
-    id: 'sky-sailor',
+    id: 'star-flyer',
     type: 'ship',
-    name: 'Sky Sailor',
+    name: 'Star Flyer',
     cruiseLine: 'Star Clippers',
-    description: 'ספינת מפרש מודרנית המשלבת את הקסם של פעם עם הנדסה עתידנית.',
-    image: 'https://picsum.photos/seed/ship4/1200/800',
+    description: 'ספינת מפרשים קלאסית עם 4 תרנים ו-36 מפרשים. חוויית שיט אותנטית בים התיכון והקריביים.',
+    image: 'https://picsum.photos/seed/starflyer/1200/800',
     specs: {
-      length: '160 מטר',
-      speed: '14 קשר (מפרשים)',
-      capacity: '300 נוסעים',
-      tonnage: '8,000 טון'
+      length: '115 מטר',
+      speed: '17 קשר (מפרשים)',
+      capacity: '170 נוסעים',
+      tonnage: '2,298 טון'
     },
-    features: ['מפרשים אוטומטיים', 'סיפון עץ טיק', 'ספרייה ימית', 'שיעורי ניווט']
+    features: ['מפרשים מסורתיים', 'סיפון עץ טיק', 'בר תורן', 'שחייה ישירות מהים']
   },
   {
-    id: 'emerald-star',
+    id: 'msc-seashore',
     type: 'ship',
-    name: 'Emerald Star',
+    name: 'MSC Seashore',
     cruiseLine: 'MSC Cruises',
-    description: 'ספינה ידידותית לסביבה המונעת בגז טבעי נוזלי (LNG), המציעה חופשה בת קיימא.',
-    image: 'https://picsum.photos/seed/ship5/1200/800',
+    description: 'אוניית Seaside EVO Class המונעת ב-LNG. טיילת ים-תיכונית ארוכה, מגלשות מים ואזור Yacht Club אקסקלוסיבי.',
+    image: 'https://picsum.photos/seed/mscseashore/1200/800',
     specs: {
-      length: '330 מטר',
-      speed: '21 קשר',
-      capacity: '5,200 נוסעים',
-      tonnage: '180,000 טון'
+      length: '339 מטר',
+      speed: '22 קשר',
+      capacity: '5,632 נוסעים',
+      tonnage: '169,380 טון'
     },
-    features: ['גינה הידרופונית', 'מיחזור מים מתקדם', 'פאנלים סולאריים', 'אוכל אורגני']
+    features: ['טיילת ים-תיכונית פתוחה', 'מגלשות מים', 'Yacht Club פרטי', 'בריכות Infinity']
   },
   {
-    id: 'voyager-pro',
+    id: 'norwegian-encore',
     type: 'ship',
-    name: 'Voyager Pro',
+    name: 'Norwegian Encore',
     cruiseLine: 'Norwegian Cruise Line',
-    description: 'ספינה המיועדת לחובבי הרפתקאות, עם דגש על פעילויות חוץ וספורט אתגרי.',
-    image: 'https://picsum.photos/seed/ship6/1200/800',
+    description: 'אוניית Breakaway Plus עם מסלול גו-קרטינג רב-קומתי, פארק שעשועים ומופעי Broadway מהשורה הראשונה.',
+    image: 'https://picsum.photos/seed/norwegianencore/1200/800',
     specs: {
-      length: '290 מטר',
-      speed: '24 קשר',
-      capacity: '2,500 נוסעים',
-      tonnage: '90,000 טון'
+      length: '333 מטר',
+      speed: '22 קשר',
+      capacity: '3,998 נוסעים',
+      tonnage: '169,116 טון'
     },
-    features: ['קיר טיפוס', 'סימולטור גלישה', 'מסלול ריצה היקפי', 'מרכז כושר']
+    features: ['מסלול גו-קרטינג', 'קיר טיפוס', 'מופעי Broadway', 'Freestyle Dining']
   },
   {
-    id: 'royal-pearl',
+    id: 'queen-mary-2',
     type: 'ship',
-    name: 'Royal Pearl',
+    name: 'Queen Mary 2',
     cruiseLine: 'Cunard Line',
-    description: 'הגדרה מחדש של יוקרה קלאסית. עיצוב פנים עשיר בשיש וזהב, ושירות ברמה של 7 כוכבים.',
-    image: 'https://picsum.photos/seed/ship7/1200/800',
+    description: 'אוניית האוקיינוס היחידה בעולם עדיין בשירות פעיל. חציית אוקיינוס קלאסית, עיצוב ארט-דקו, תה מנחה ומופעי נשפים.',
+    image: 'https://picsum.photos/seed/queenmary2/1200/800',
     specs: {
-      length: '270 מטר',
-      speed: '20 קשר',
-      capacity: '1,200 נוסעים',
-      tonnage: '70,000 טון'
+      length: '345 מטר',
+      speed: '30 קשר',
+      capacity: '2,691 נוסעים',
+      tonnage: '148,528 טון'
     },
-    features: ['אולם נשפים', 'קזינו מפואר', 'תה מנחה מסורתי', 'סוויטות מלכותיות']
+    features: ['חציית אוקיינוס', 'תה מנחה מסורתי', 'פלנטריום', 'אולם נשפים']
   },
   {
     id: 'silver-spirit',
@@ -248,6 +263,186 @@ export const ships: Ship[] = [
       tonnage: '36,000 טון'
     },
     features: ['מסעדת גורמה', 'ספריית מוזיקה', 'מרכז בריאות', 'סיפון תצפית']
+  },
+  {
+    id: 'icon-of-the-seas',
+    type: 'ship',
+    name: 'Icon of the Seas',
+    cruiseLine: 'Royal Caribbean',
+    description: 'אחת מאוניות הנוסעים הגדולות והחדשות בעולם, פארק מים עצום, רובע משפחות ואזורי יוקרה שקטים למבוגרים בלבד.',
+    image: 'https://picsum.photos/seed/iconoftheseas/1200/800',
+    specs: {
+      length: '365 מטר',
+      speed: '22 קשר',
+      capacity: '7,600 נוסעים',
+      tonnage: '250,800 טון'
+    },
+    features: ['פארק מים מהגדולים בים', 'שכונות נושא שונות על הסיפון', 'קיר טיפוס ענק', 'בריכה אינסופית עליונה']
+  },
+  {
+    id: 'wonder-of-the-seas',
+    type: 'ship',
+    name: 'Wonder of the Seas',
+    cruiseLine: 'Royal Caribbean',
+    description: '“עיר צפה” עם שכונות, טיילת פתוחה, זירת החלקה על הקרח ומופעי מים מרהיבים בחלק האחורי של האונייה.',
+    image: 'https://picsum.photos/seed/wonderoftheseas/1200/800',
+    specs: {
+      length: '362 מטר',
+      speed: '22 קשר',
+      capacity: '6,988 נוסעים',
+      tonnage: '236,857 טון'
+    },
+    features: ['אמפיתיאטרון מים פתוח', 'אומגה בין הסיפונים', 'מסלולי מיני גולף', 'שדרת חנויות ומסעדות']
+  },
+  {
+    id: 'msc-world-europa',
+    type: 'ship',
+    name: 'MSC World Europa',
+    cruiseLine: 'MSC Cruises',
+    description: 'אוניית דגל חדשנית המונעת ב-LNG, עם טיילת פתוחה מרהיבה, מגלשות ענק ומרחבי קונספט למשפחות וזוגות.',
+    image: 'https://picsum.photos/seed/mscworldeuropa/1200/800',
+    specs: {
+      length: '333 מטר',
+      speed: '22 קשר',
+      capacity: '6,762 נוסעים',
+      tonnage: '215,863 טון'
+    },
+    features: ['מגלשת ספירלה בגובה עשרות מטרים', 'אזור שקט למבוגרים בלבד', 'בריכת אינסוף מאחור', 'טיילת פנימית עם כיפת לדים']
+  },
+  {
+    id: 'norwegian-prima',
+    type: 'ship',
+    name: 'Norwegian Prima',
+    cruiseLine: 'Norwegian Cruise Line',
+    description: 'דגש על מרחבים פתוחים, שירות פרימיום וחוויית “Freestyle Cruising” עם גמישות מלאה בבחירת הארוחות והפעילויות.',
+    image: 'https://picsum.photos/seed/norwegianprima/1200/800',
+    specs: {
+      length: '294 מטר',
+      speed: '23 קשר',
+      capacity: '3,215 נוסעים',
+      tonnage: '142,500 טון'
+    },
+    features: ['מסלול קארטינג רב-קומתי', 'אזור ספא מפנק', 'מסעדות שף בסגנון פתוח', 'מופעי בידור מקוריים']
+  },
+  {
+    id: 'sun-princess',
+    type: 'ship',
+    name: 'Sun Princess',
+    cruiseLine: 'Princess Cruises',
+    description: 'דור חדש של אוניות פרינסס עם כיפת זכוכית עצומה, לאונג׳ים פתוחים לים וחוויה קולינרית עשירה.',
+    image: 'https://picsum.photos/seed/sunprincess/1200/800',
+    specs: {
+      length: '345 מטר',
+      speed: '22 קשר',
+      capacity: '4,300 נוסעים',
+      tonnage: '175,500 טון'
+    },
+    features: ['אטריום זכוכית מרהיב', 'בריכות מרובות בשלושה מפלסים', 'סוויטות מרווחות עם מרפסות ענק', 'חוויית MedallionClass מתקדמת']
+  },
+  {
+    id: 'disney-wish',
+    type: 'ship',
+    name: 'Disney Wish',
+    cruiseLine: 'Disney Cruise Line',
+    description: 'חלום למשפחות עם ילדים – דמויות דיסני בכל פינה, מופעים, מגלשות מים סביב הסיפון וחדרים בעיצוב קסום.',
+    image: 'https://picsum.photos/seed/disneywish/1200/800',
+    specs: {
+      length: '341 מטר',
+      speed: '19 קשר',
+      capacity: '4,000 נוסעים',
+      tonnage: '144,000 טון'
+    },
+    features: ['מגלשת מים סביב האונייה', 'ארוחות חווייתיות עם דמויות', 'אזורי מבוגרים שקטים', 'מועדוני ילדים לכל הגילאים']
+  },
+  {
+    id: 'disney-treasure',
+    type: 'ship',
+    name: 'Disney Treasure',
+    cruiseLine: 'Disney Cruise Line',
+    description: 'אוניית דיסני החדשה ביותר (2024). עיצוב בהשראת הרפתקאות, מסעדות חווייתיות ומתקנים מתקדמים למשפחות.',
+    image: 'https://picsum.photos/seed/disneytreasure/1200/800',
+    specs: {
+      length: '344 מטר',
+      speed: '21 קשר',
+      capacity: '4,000 נוסעים',
+      tonnage: '144,000 טון'
+    },
+    features: ['מסעדה בהשראת "אלאדין"', 'בר Lounges בסגנון הרפתקאות', 'מגלשות מים', 'מועדוני ילדים מודרניים']
+  },
+  {
+    id: 'norwegian-viva',
+    type: 'ship',
+    name: 'Norwegian Viva',
+    cruiseLine: 'Norwegian Cruise Line',
+    description: 'אחותה של Norwegian Prima. עיצוב סקנדינבי מודרני, מסלול גו-קרטינג ו-Freestyle Cruising מלא.',
+    image: 'https://picsum.photos/seed/norwegianviva/1200/800',
+    specs: {
+      length: '294 מטר',
+      speed: '23 קשר',
+      capacity: '3,099 נוסעים',
+      tonnage: '142,500 טון'
+    },
+    features: ['מסלול גו-קרטינג', 'Indulge Food Hall', 'ספא מפנק', 'מופעי בידור']
+  },
+  {
+    id: 'celebrity-beyond',
+    type: 'ship',
+    name: 'Celebrity Beyond',
+    cruiseLine: 'Celebrity Cruises',
+    description: 'אוניית Edge Class המשודרגת. Magic Carpet – פלטפורמה צפה, מסעדות מישלן וסגנון "Modern Luxury".',
+    image: 'https://picsum.photos/seed/celebritybeyond/1200/800',
+    specs: {
+      length: '327 מטר',
+      speed: '22 קשר',
+      capacity: '3,260 נוסעים',
+      tonnage: '140,600 טון'
+    },
+    features: ['Magic Carpet – פלטפורמה צפה', 'מסעדות Le Petit Chef', 'ריאות ירוקות', 'ספא Canyon Ranch']
+  },
+  {
+    id: 'carnival-mardi-gras',
+    type: 'ship',
+    name: 'Carnival Mardi Gras',
+    cruiseLine: 'Carnival Cruise Line',
+    description: 'אוניית "הכיף" הגדולה של קרניבל. מסלול גו-קרטינג Bolt, אזור French Quarter ומגוון מסעדות.',
+    image: 'https://picsum.photos/seed/carnivalmardigras/1200/800',
+    specs: {
+      length: '344 מטר',
+      speed: '23 קשר',
+      capacity: '6,465 נוסעים',
+      tonnage: '180,800 טון'
+    },
+    features: ['מסלול Bolt – גו-קרטינג אלקטרוני', 'French Quarter פנימי', 'מגלשות מים', 'מסעדות Guy Fieri']
+  },
+  {
+    id: 'costa-smeralda',
+    type: 'ship',
+    name: 'Costa Smeralda',
+    cruiseLine: 'Costa Cruises',
+    description: 'אוניית LNG הראשונה של קוסטה. עיצוב איטלקי עכשווי, טיילת Colosseo פתוחה ומסעדות איטלקיות אותנטיות.',
+    image: 'https://picsum.photos/seed/costasmeralda/1200/800',
+    specs: {
+      length: '337 מטר',
+      speed: '22 קשר',
+      capacity: '6,554 נוסעים',
+      tonnage: '185,010 טון'
+    },
+    features: ['מונעת ב-LNG', 'טיילת Colosseo', 'מסעדות איטלקיות', 'ספא Samsara']
+  },
+  {
+    id: 'silver-nova',
+    type: 'ship',
+    name: 'Silver Nova',
+    cruiseLine: 'Silversea Cruises',
+    description: 'אוניית היוקרה החדשה של סילברסיאה עם אסימטריה ייחודית, מסעדות גורמה וצוללת משלחות.',
+    image: 'https://picsum.photos/seed/silveranova/1200/800',
+    specs: {
+      length: '244 מטר',
+      speed: '19 קשר',
+      capacity: '728 נוסעים',
+      tonnage: '54,700 טון'
+    },
+    features: ['עיצוב אסימטרי ייחודי', 'מסעדות גורמה', 'צוללת משלחות', 'שירות כל-כלול']
   }
 ];
 

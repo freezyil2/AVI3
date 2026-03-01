@@ -114,14 +114,15 @@ export default function HomePage() {
               >
                 גלה יעדים
               </motion.a>
-              <motion.a 
-                whileHover={{ scale: 1.05, backgroundColor: "rgba(255,255,255,0.1)" }}
-                whileTap={{ scale: 0.95 }}
-                href="#fleet" 
-                className="glass-morphism px-12 py-5 rounded-full font-black text-xl border border-white/20 transition-all"
-              >
-                הצי שלנו
-              </motion.a>
+              <Link to="/fleet">
+                <motion.span
+                  whileHover={{ scale: 1.05, backgroundColor: "rgba(255,255,255,0.1)" }}
+                  whileTap={{ scale: 0.95 }}
+                  className="inline-block glass-morphism px-12 py-5 rounded-full font-black text-xl border border-white/20 transition-all"
+                >
+                  הצי שלנו
+                </motion.span>
+              </Link>
             </motion.div>
           </motion.div>
         </div>
@@ -156,7 +157,7 @@ export default function HomePage() {
             {[
               { label: 'נוסעים מרוצים', value: '50K+' },
               { label: 'יעדים בעולם', value: '120+' },
-              { label: 'אוניות בצי', value: '25' },
+              { label: 'אוניות בצי', value: '21' },
               { label: 'שנות ניסיון', value: '15' }
             ].map((stat, i) => (
               <div key={i}>
@@ -222,9 +223,15 @@ export default function HomePage() {
           </div>
           
           <div className="mt-16 text-center">
-            <button className="glass-morphism px-12 py-4 rounded-full font-black text-lg hover:bg-white/20 transition-all">
-              צפה בכל הצי (7 אוניות)
-            </button>
+            <Link to="/fleet">
+              <motion.button
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className="glass-morphism px-12 py-4 rounded-full font-black text-lg hover:bg-white/20 transition-all"
+              >
+                צפה בכל הצי המלא
+              </motion.button>
+            </Link>
           </div>
         </div>
       </section>

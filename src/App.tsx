@@ -8,6 +8,7 @@ import BlogPostPage from './BlogPostPage';
 import BlogPage from './BlogPage';
 import CruiseLinePage from './CruiseLinePage';
 import HotelsPage from './HotelsPage';
+import FleetPage from './FleetPage';
 
 export default function App() {
   return (
@@ -19,6 +20,7 @@ export default function App() {
             <Route path="/" element={<HomePage />} />
             <Route path="/blog" element={<BlogPage />} />
             <Route path="/hotels" element={<HotelsPage />} />
+            <Route path="/fleet" element={<FleetPage />} />
             <Route path="/:type/:id" element={<DetailPage />} />
             <Route path="/blog/:id" element={<BlogPostPage />} />
             <Route path="/cruise-line/:id" element={<CruiseLinePage />} />

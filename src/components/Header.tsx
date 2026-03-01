@@ -62,7 +62,7 @@ export default function Header() {
         <nav className="hidden lg:flex items-center gap-8">
           <Link to="/" className="hover:text-gold transition-colors font-medium">בית</Link>
           <Link to="/#destinations" onClick={(e) => handleNavClick(e, '#destinations')} className="hover:text-gold transition-colors font-medium">יעדים</Link>
-          <Link to="/#fleet" onClick={(e) => handleNavClick(e, '#fleet')} className="hover:text-gold transition-colors font-medium">צי האוניות</Link>
+          <Link to="/fleet" className="hover:text-gold transition-colors font-medium">צי האוניות</Link>
           <Link to="/hotels" className="hover:text-gold transition-colors font-medium">מלונות</Link>
           <Link to="/blog" className="hover:text-gold transition-colors font-medium">בלוג וכתבות</Link>
           <Link to="/#contact" onClick={(e) => handleNavClick(e, '#contact')} className="hover:text-gold transition-colors font-medium">צור קשר</Link>
@@ -130,7 +130,7 @@ export default function Header() {
             <div className="container mx-auto px-6 py-8 flex flex-col gap-6">
               <Link to="/" onClick={() => setIsMenuOpen(false)} className="text-xl font-bold">בית</Link>
               <Link to="/#destinations" onClick={(e) => handleNavClick(e, '#destinations')} className="text-xl font-bold">יעדים</Link>
-              <Link to="/#fleet" onClick={(e) => handleNavClick(e, '#fleet')} className="text-xl font-bold">צי האוניות</Link>
+              <Link to="/fleet" onClick={() => setIsMenuOpen(false)} className="text-xl font-bold">צי האוניות</Link>
               <Link to="/hotels" onClick={() => setIsMenuOpen(false)} className="text-xl font-bold">מלונות</Link>
               <Link to="/blog" onClick={() => setIsMenuOpen(false)} className="text-xl font-bold">בלוג וכתבות</Link>
               <Link to="/#contact" onClick={(e) => handleNavClick(e, '#contact')} className="text-xl font-bold">צור קשר</Link>
