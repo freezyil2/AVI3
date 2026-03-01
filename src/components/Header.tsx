@@ -43,8 +43,9 @@ export default function Header() {
   return (
     <header 
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-        isScrolled ? 'bg-ocean-deep/90 backdrop-blur-lg py-3 shadow-2xl' : 'bg-transparent py-6'
+        isScrolled ? 'bg-ocean-deep/90 backdrop-blur-lg py-3 shadow-2xl' : 'py-6'
       }`}
+      style={!isScrolled ? { background: 'transparent', boxShadow: 'none' } : undefined}
     >
       <div className="container mx-auto px-6 flex items-center justify-between">
         {/* Logo - organized in a clean container */}

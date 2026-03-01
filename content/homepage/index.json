@@ -1,0 +1,66 @@
+{
+  "heroTitle": "קרוז",
+  "heroSubtitle": "הפלגות נופש ברחבי העולם",
+  "homepageLabels": {
+    "cruiseLinesTitlePrefix": "",
+    "cruiseLinesTitleHighlight": "חברות ספנות",
+    "cruiseLinesTitleSuffix": "",
+    "testimonials": [
+      {
+        "name": "ליאור",
+        "text": "כ"
+      }
+    ],
+    "ourStoryParagraph1": "",
+    "contactPlaceholderEmail": "lynrtrbw@gmail.com"
+  },
+  "detailPageLabels": {
+    "aboutTitle": "אודות"
+  },
+  "fleetPageLabels": {
+    "backToHome": "חזרה לדף הבית",
+    "titlePrefix": "",
+    "titleHighlight": "אוניותתתתתתת",
+    "subtitle": "גלו את כל אוניות הנוסעים הגדולות והמובילות בעולם. ממפלצות ים טכנולוגיות ועד ליאכטות בוטיק אינטימיות.\n\n",
+    "searchPlaceholder": "חיפש אוניה או חברת ספנות",
+    "noResults": "אין תוצאות",
+    "clearSearch": "נקה חיפוש"
+  },
+  "homepageShipIds": [
+    "lior555555"
+  ],
+  "blogPageLabels": {
+    "titlePrefix": "בלוג"
+  },
+  "homepageBlogPostIds": [
+    "lior55555"
+  ],
+  "ships": [
+    {
+      "id": "lior555555",
+      "name": "יםייי",
+      "cruiseLine": "ליאור טרבלוס ",
+      "description": "גככככככככ",
+      "speed": "11",
+      "capacity": "1000000",
+      "features": [
+        "אוכל",
+        "ים"
+      ],
+      "image": "/uploads/763792fa9914521455e88aa3b47f52e0.png",
+      "gallery": [
+        "/uploads/763792fa9914521455e88aa3b47f52e0.png",
+        "/uploads/763792fa9914521455e88aa3b47f52e0.png"
+      ]
+    }
+  ],
+  "blogPosts": [
+    {
+      "id": "lior55555",
+      "title": "lior",
+      "excerpt": "שלוםן כלגכגכדגכדדגככככככככככ",
+      "date": "18/18/1999",
+      "image": "/uploads/763792fa9914521455e88aa3b47f52e0.png"
+    }
+  ]
+}

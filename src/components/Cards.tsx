@@ -38,7 +38,11 @@ export function DestinationCard({ item }: { item: Destination }) {
   );
 }
 
-export function ShipCard({ item }: { item: Ship }) {
+export function ShipCard({ item, labels }: { item: Ship; labels?: { categoryLabel?: string; speedLabel?: string; capacityLabel?: string; fullSpecsLink?: string } }) {
+  const cat = labels?.categoryLabel ?? 'צי האוניות';
+  const speedL = labels?.speedLabel ?? 'מהירות';
+  const capL = labels?.capacityLabel ?? 'קיבולת';
+  const specsL = labels?.fullSpecsLink ?? 'מפרט טכני מלא';
   return (
     <motion.div
       whileHover={{ scale: 1.02 }}
@@ -57,23 +61,23 @@ export function ShipCard({ item }: { item: Ship }) {
           <div className="flex items-center justify-between mb-3">
             <div className="flex items-center gap-2 text-turquoise">
               <ShipIcon size={20} />
-              <span className="text-xs font-bold tracking-widest uppercase">צי האוניות</span>
+              <span className="text-xs font-bold tracking-widest uppercase">{cat}</span>
             </div>
             <span className="text-xs font-bold text-gold/80 bg-gold/10 px-3 py-1 rounded-full border border-gold/20">
               {item.cruiseLine}
             </span>
           </div>
           <h3 className="text-3xl font-black mb-4">{item.name}</h3>
-          <p className="text-pearl/70 mb-6 leading-relaxed">{item.description}</p>
-          
+          <p className="text-pearl/70 mb-6 leading-relaxed">{item.description || '—'}</p>
+
           <div className="grid grid-cols-2 gap-4 mb-8">
             <div className="flex items-center gap-3">
               <div className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-gold">
                 <Wind size={18} />
               </div>
               <div>
-                <p className="text-[10px] text-pearl/50 uppercase">מהירות</p>
-                <p className="font-bold">{item.specs.speed}</p>
+                <p className="text-[10px] text-pearl/50 uppercase">{speedL}</p>
+                <p className="font-bold">{item.specs.speed || '—'}</p>
               </div>
             </div>
             <div className="flex items-center gap-3">
@@ -81,18 +85,18 @@ export function ShipCard({ item }: { item: Ship }) {
                 <Users size={18} />
               </div>
               <div>
-                <p className="text-[10px] text-pearl/50 uppercase">קיבולת</p>
-                <p className="font-bold">{item.specs.capacity}</p>
+                <p className="text-[10px] text-pearl/50 uppercase">{capL}</p>
+                <p className="font-bold">{item.specs.capacity || '—'}</p>
               </div>
             </div>
           </div>
         </div>
-        
-        <Link 
+
+        <Link
           to={`/ship/${item.id}`}
           className="inline-flex items-center gap-2 text-gold font-bold hover:gap-4 transition-all"
         >
-          <span>מפרט טכני מלא</span>
+          <span>{specsL}</span>
           <ArrowLeft size={20} />
         </Link>
       </div>
