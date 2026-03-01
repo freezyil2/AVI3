@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
   "dev": "tinacms dev -c \"vite\"",
-  "build": "vite build",
+  "build": "tinacms build && vite build",
     "build:tinacms": "tinacms build && vite build",
   "preview": "vite preview"
 },
