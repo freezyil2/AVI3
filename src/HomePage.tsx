@@ -250,6 +250,25 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Hotels Section */}
+      <section id="hotels" className="py-24 bg-[#000a1a] overflow-hidden border-t border-white/5">
+        <div className="container mx-auto px-6 text-center">
+          <h2 className="text-4xl md:text-5xl font-black mb-4">מלונות</h2>
+          <p className="text-pearl/60 text-lg max-w-2xl mx-auto mb-8">
+            אנחנו עובדים עם כל המלונות בעולם. השאירו פרטים ונחזור אליכם עם הצעה מותאמת אישית.
+          </p>
+          <Link to="/hotels">
+            <motion.button
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="bg-gold text-ocean-deep px-12 py-4 rounded-full font-black text-lg hover:bg-yellow-400 transition-colors"
+            >
+              השאירו פרטים לקבלת הצעה
+            </motion.button>
+          </Link>
+        </div>
+      </section>
+
       {/* How it Works Section */}
       <section className="py-24 relative">
         <div className="container mx-auto px-6">

@@ -47,13 +47,15 @@ export default function Header() {
       }`}
     >
       <div className="container mx-auto px-6 flex items-center justify-between">
-        {/* Logo */}
-        <Link to="/" className="flex items-center group">
-          <img 
-            src={logoImg} 
-            alt="קרוז לכול" 
-            className="h-16 w-auto object-contain transition-transform duration-300 group-hover:scale-105" 
-          />
+        {/* Logo - organized in a clean container */}
+        <Link to="/" className="flex items-center gap-2 group shrink-0">
+          <div className="flex items-center justify-center h-14 w-auto max-h-14">
+            <img 
+              src={logoImg} 
+              alt="קרוז לכול" 
+              className="h-full w-auto max-h-14 object-contain object-center transition-transform duration-300 group-hover:scale-105" 
+            />
+          </div>
         </Link>
 
         {/* Desktop Nav */}
@@ -61,6 +63,7 @@ export default function Header() {
           <Link to="/" className="hover:text-gold transition-colors font-medium">בית</Link>
           <Link to="/#destinations" onClick={(e) => handleNavClick(e, '#destinations')} className="hover:text-gold transition-colors font-medium">יעדים</Link>
           <Link to="/#fleet" onClick={(e) => handleNavClick(e, '#fleet')} className="hover:text-gold transition-colors font-medium">צי האוניות</Link>
+          <Link to="/hotels" className="hover:text-gold transition-colors font-medium">מלונות</Link>
           <Link to="/blog" className="hover:text-gold transition-colors font-medium">בלוג וכתבות</Link>
           <Link to="/#contact" onClick={(e) => handleNavClick(e, '#contact')} className="hover:text-gold transition-colors font-medium">צור קשר</Link>
         </nav>
@@ -128,6 +131,7 @@ export default function Header() {
               <Link to="/" onClick={() => setIsMenuOpen(false)} className="text-xl font-bold">בית</Link>
               <Link to="/#destinations" onClick={(e) => handleNavClick(e, '#destinations')} className="text-xl font-bold">יעדים</Link>
               <Link to="/#fleet" onClick={(e) => handleNavClick(e, '#fleet')} className="text-xl font-bold">צי האוניות</Link>
+              <Link to="/hotels" onClick={() => setIsMenuOpen(false)} className="text-xl font-bold">מלונות</Link>
               <Link to="/blog" onClick={() => setIsMenuOpen(false)} className="text-xl font-bold">בלוג וכתבות</Link>
               <Link to="/#contact" onClick={(e) => handleNavClick(e, '#contact')} className="text-xl font-bold">צור קשר</Link>
             </div>

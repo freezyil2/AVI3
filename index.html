@@ -36,6 +36,25 @@
     </script>
   </head>
   <body>
+    <!-- Netlify Forms - hidden forms for SPA form detection -->
+    <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+      <input type="text" name="name" />
+      <input type="tel" name="phone" />
+      <input type="email" name="email" />
+      <textarea name="message"></textarea>
+      <input type="text" name="bot-field" />
+    </form>
+    <form name="hotels" netlify netlify-honeypot="bot-field" hidden>
+      <input type="date" name="desiredDate" />
+      <input type="number" name="travelersCount" />
+      <input type="text" name="destination" />
+      <input type="text" name="firstName" />
+      <input type="text" name="lastName" />
+      <input type="tel" name="phone" />
+      <input type="email" name="email" />
+      <textarea name="comments"></textarea>
+      <input type="text" name="bot-field" />
+    </form>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
 

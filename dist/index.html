@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>קרוז לכול - Cruise For All</title>
+    
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
+    <script language="javascript" type="text/javascript" src="https://content.cdn705.com/Content/WebApps/OdyVExplore/OVExplore.min.js"></script>
+    <script>
+      window.OVExplore = {
+        preferences: {
+          languageId: "9", // 1 - english, 9 - hebrew
+          siteItemId: "1087035",
+          showStateNCountryWithPorts: true,
+          resultWindowType: "_blank", // Options: 1._blank 2._self 3._top
+          cruiseSearchFields: {				
+            basic: ["destination","cruiseline","ship","departureport","sailingdate","duration"],
+          },
+        },
+        siteSettings: {
+          productType: "cruise",
+          domain: "book.cruise4all.co.il",
+          numberOfCols: 6,
+          themeColor: "#ffffff|#2d67b1|#000000|#ffffff", // specfies primary | secondary| text color | button text color
+        },
+        cruiseSearchSettings: {
+          portPriority: "HFA",
+          destinationPriority: "75,15,142,122,9,1,19,21,29,32",
+        },
+        cruiseWidgetSettings: {
+          widgetStyle: "vue_multiselect", // Options 1. vue_multiselect 2. simple_select
+        },
+      };
+    </script>
+    <script type="module" crossorigin src="/assets/index-CsR1VFwT.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-DBhF1tcL.css">
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <script>
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", user => {
+          if (!user) {
+            window.netlifyIdentity.on("login", () => {
+              document.location.href = "/admin/";
+            });
+          }
+        });
+      }
+    </script>
+  </body>
+</html>
