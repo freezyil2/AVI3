@@ -34,7 +34,7 @@ export default function BackToTop() {
               initial={{ opacity: 0, scale: 0.5 }}
               animate={{ opacity: 1, scale: 1 }}
               exit={{ opacity: 0, scale: 0.5 }}
-              href="https://wa.me/123456789"
+              href="https://api.whatsapp.com/send?phone=972527002908"
               target="_blank"
               rel="noopener noreferrer"
               className="w-14 h-14 bg-[#25D366] text-white rounded-full shadow-2xl flex items-center justify-center hover:scale-110 transition-transform"

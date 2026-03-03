@@ -23,6 +23,7 @@ const fallbackHomepage = {
     pointsOfInterestTitle: 'נקודות עניין מרכזיות',
     weatherTitle: 'מזג אוויר ממוצע',
     mapTitle: 'מפת הנתיב',
+    destinationGalleryTitle: 'גלריית תמונות',
     featuresTitle: 'מאפיינים ומתקנים',
     specsTitle: 'מפרט טכני',
     specsLength: 'אורך',
@@ -185,27 +186,42 @@ function withTimeout<T>(promise: Promise<T>, ms: number): Promise<T> {
 }
 
 /** Merged destinations: from Tina, or full from data when id matches; fallback when empty */
-function mergeDestinations(hp: HomepageData): Destination[] {
+function mergeDestinations(hp: HomepageData): (Destination & { gallery?: string[] })[] {
   const list = (hp.destinations && hp.destinations.length > 0) ? hp.destinations : (fallbackHomepage.destinations ?? []);
   return list.filter(Boolean).map((d) => {
     const fromData = dataDestinations.find((x) => x.id === d.id);
-    if (fromData) return fromData;
     const tinaDest = d as {
       weather?: string;
       mapImage?: string | { src?: string };
       mapUrl?: string;
       pointsOfInterest?: string[];
+      gallery?: (string | { src?: string })[];
     };
-    return {
-      id: d.id,
-      type: 'destination' as const,
-      name: d.title,
-      description: d.description ?? '',
-      image: resolveImage(d.image as string | { src?: string }),
-      mapUrl: tinaDest.mapUrl || resolveImage(tinaDest.mapImage),
-      weather: tinaDest.weather ?? '',
-      pointsOfInterest: Array.isArray(tinaDest.pointsOfInterest) ? tinaDest.pointsOfInterest.filter(Boolean) : [],
-    };
+    const base = fromData
+      ? { ...fromData }
+      : {
+          id: d.id,
+          type: 'destination' as const,
+          name: d.title,
+          description: d.description ?? '',
+          image: resolveImage(d.image as string | { src?: string }),
+          mapUrl: tinaDest.mapUrl || resolveImage(tinaDest.mapImage),
+          weather: tinaDest.weather ?? '',
+          pointsOfInterest: Array.isArray(tinaDest.pointsOfInterest) ? tinaDest.pointsOfInterest.filter(Boolean) : [],
+        };
+    const galleryUrls = Array.isArray(tinaDest.gallery)
+      ? tinaDest.gallery.map((img) => resolveImage(img)).filter(Boolean)
+      : undefined;
+    const mapImageUrl = tinaDest.mapUrl || resolveImage(tinaDest.mapImage);
+    const gallery =
+      galleryUrls && galleryUrls.length > 0
+        ? galleryUrls
+        : mapImageUrl
+          ? [mapImageUrl]
+          : fromData?.mapUrl
+            ? [fromData.mapUrl]
+            : undefined;
+    return { ...base, mapUrl: base.mapUrl || mapImageUrl || '', gallery };
   });
 }
 

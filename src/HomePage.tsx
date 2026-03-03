@@ -66,7 +66,6 @@ const DEFAULT_LABELS = {
   ourStoryHighlight: 'שלנו',
   ourStoryParagraph1: 'לפני למעלה מ-15 שנה, יצאנו לדרך עם חלום אחד פשוט: להנגיש את עולם הקרוזים היוקרתי לכל ישראלי.',
   ourStoryParagraph2: 'אנחנו מאמינים שחופשה היא לא רק זמן מנוחה, אלא הזדמנות ליצור זיכרונות שישארו איתכם לנצח.',
-  ourStoryTeamLabel: 'צוות המומחים שלנו מחכה לכם',
   faqTitle: 'שאלות',
   faqHighlight: 'נפוצות',
   faqSubtitle: 'כל מה שרציתם לדעת על הזמנת קרוז ולא העזתם לשאול.',
@@ -508,19 +507,6 @@ export default function HomePage() {
               <p className="text-lg text-pearl/50 leading-relaxed mb-10">
                 {((L as any).ourStoryParagraph2 || DEFAULT_LABELS.ourStoryParagraph2)}
               </p>
-              <div className="flex items-center gap-6">
-                <div className="flex -space-x-4 rtl:space-x-reverse">
-                  {[1, 2, 3, 4].map(i => (
-                    <img 
-                      key={i}
-                      src={`https://i.pravatar.cc/150?u=${i}`} 
-                      alt="Team Member" 
-                      className="w-12 h-12 rounded-full border-2 border-ocean-deep"
-                    />
-                  ))}
-                </div>
-                <span className="text-pearl/60 font-medium">{(L as any).ourStoryTeamLabel ?? DEFAULT_LABELS.ourStoryTeamLabel}</span>
-              </div>
             </div>
           </div>
         </div>

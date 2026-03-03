@@ -191,6 +191,7 @@ type HomepageDetailPageLabels {
   pointsOfInterestTitle: String
   weatherTitle: String
   mapTitle: String
+  destinationGalleryTitle: String
   featuresTitle: String
   specsTitle: String
   specsLength: String
@@ -242,6 +243,7 @@ type HomepageDestinations {
   image: String
   weather: String
   mapImage: String
+  gallery: [String]
   pointsOfInterest: [String]
 }
 
@@ -401,6 +403,7 @@ input HomepageDetailPageLabelsFilter {
   pointsOfInterestTitle: StringFilter
   weatherTitle: StringFilter
   mapTitle: StringFilter
+  destinationGalleryTitle: StringFilter
   featuresTitle: StringFilter
   specsTitle: StringFilter
   specsLength: StringFilter
@@ -459,6 +462,7 @@ input HomepageDestinationsFilter {
   image: ImageFilter
   weather: StringFilter
   mapImage: ImageFilter
+  gallery: ImageFilter
   pointsOfInterest: StringFilter
 }
 
@@ -690,6 +694,7 @@ input HomepageDetailPageLabelsMutation {
   pointsOfInterestTitle: String
   weatherTitle: String
   mapTitle: String
+  destinationGalleryTitle: String
   featuresTitle: String
   specsTitle: String
   specsLength: String
@@ -741,6 +746,7 @@ input HomepageDestinationsMutation {
   image: String
   weather: String
   mapImage: String
+  gallery: [String]
   pointsOfInterest: [String]
 }
 

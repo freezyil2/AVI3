@@ -108,20 +108,44 @@ export default function DetailPage() {
                 <div className="glass-morphism p-8 rounded-[32px] border-turquoise/20">
                   <h3 className="text-xl font-black mb-6 flex items-center gap-3">
                     <Cloud className="text-turquoise" />
-                    <span>מזג אוויר ממוצע</span>
+                    <span>{L.weatherTitle ?? 'מזג אוויר ממוצע'}</span>
                   </h3>
                   <p className="text-2xl font-bold text-turquoise">{(item as any).weather}</p>
                 </div>
                 
-                <div className="glass-morphism p-4 rounded-[32px] overflow-hidden">
-                  <p className="text-xs font-bold uppercase tracking-widest text-pearl/40 mb-4 mr-4">מפת הנתיב</p>
-                  <img 
-                    src={(item as any).mapUrl} 
-                    alt="Route Map"
-                    className="w-full rounded-2xl grayscale hover:grayscale-0 transition-all duration-500"
-                    referrerPolicy="no-referrer"
-                  />
-                </div>
+                {(item as any).gallery && (item as any).gallery.length > 0 ? (
+                  <div className="glass-morphism p-4 rounded-[32px] overflow-hidden">
+                    <h3 className="text-xl font-black mb-4 flex items-center gap-2">
+                      <Images className="text-turquoise" />
+                      <span>{(L as any).destinationGalleryTitle ?? 'גלריית תמונות'}</span>
+                    </h3>
+                    <div className="grid grid-cols-2 gap-2">
+                      {(item as any).gallery.slice(0, 4).map((src: string, i: number) => (
+                        <div key={i} className="aspect-[4/3] rounded-xl overflow-hidden">
+                          <img
+                            src={src}
+                            alt={`${item.name} - תמונה ${i + 1}`}
+                            className="w-full h-full object-cover"
+                            referrerPolicy="no-referrer"
+                          />
+                        </div>
+                      ))}
+                    </div>
+                    {(item as any).gallery.length > 4 && (
+                      <p className="text-xs text-pearl/50 mt-2">+{(item as any).gallery.length - 4} תמונות נוספות</p>
+                    )}
+                  </div>
+                ) : (item as any).mapUrl ? (
+                  <div className="glass-morphism p-4 rounded-[32px] overflow-hidden">
+                    <p className="text-xs font-bold uppercase tracking-widest text-pearl/40 mb-4 mr-4">{(L as any).mapTitle ?? 'מפת הנתיב'}</p>
+                    <img 
+                      src={(item as any).mapUrl} 
+                      alt="Route Map"
+                      className="w-full rounded-2xl grayscale hover:grayscale-0 transition-all duration-500"
+                      referrerPolicy="no-referrer"
+                    />
+                  </div>
+                ) : null}
               </div>
             ) : (
               <div className="space-y-8">
@@ -174,11 +198,11 @@ export default function DetailPage() {
         </div>
       </section>
 
-      {type === 'ship' && (item as any).gallery && (item as any).gallery.length > 0 && (
+      {((type === 'ship' || type === 'destination') && (item as any).gallery && (item as any).gallery.length > 0) && (
         <section className="py-20 container mx-auto px-6">
           <h2 className="text-3xl font-black mb-12 flex items-center gap-3">
             <Images className="text-gold" />
-            <span>{L.galleryTitle ?? 'גלריית תמונות'}</span>
+            <span>{type === 'destination' ? ((L as any).destinationGalleryTitle ?? 'גלריית תמונות') : (L.galleryTitle ?? 'גלריית תמונות')}</span>
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
             {(item as any).gallery.map((src: string, i: number) => (

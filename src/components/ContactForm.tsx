@@ -55,7 +55,8 @@ export default function ContactForm() {
                 </div>
                 <div>
                   <p className="text-sm text-pearl/50">טלפון</p>
-                  <p className="text-xl font-bold">1-800-CRUISE</p>
+                  <p className="text-xl font-bold">אבי: 052-7002908</p>
+                  <p className="text-xl font-bold">מאור: 052-38540038</p>
                 </div>
               </div>
               <div className="flex items-center gap-4">
@@ -64,18 +65,10 @@ export default function ContactForm() {
                 </div>
                 <div>
                   <p className="text-sm text-pearl/50">אימייל</p>
-                  <p className="text-xl font-bold">liortr0000@gmail.com</p>
+                  <p className="text-xl font-bold">cruise4all.il@gmail.com</p>
                 </div>
               </div>
-              <div className="flex items-center gap-4">
-                <div className="w-12 h-12 rounded-2xl bg-white/10 flex items-center justify-center text-pearl">
-                  <MapPin size={24} />
-                </div>
-                <div>
-                  <p className="text-sm text-pearl/50">כתובת</p>
-                  <p className="text-xl font-bold">מגדלי הים, תל אביב</p>
-                </div>
-              </div>
+              
             </div>
           </div>
 

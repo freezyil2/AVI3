@@ -100,6 +100,7 @@ fragment HomepageParts on Homepage {
     pointsOfInterestTitle
     weatherTitle
     mapTitle
+    destinationGalleryTitle
     featuresTitle
     specsTitle
     specsLength
@@ -153,6 +154,7 @@ fragment HomepageParts on Homepage {
     image
     weather
     mapImage
+    gallery
     pointsOfInterest
   }
   ships {

@@ -1,9 +1,9 @@
 // tina/config.ts
 import { defineConfig } from "tinacms";
 var config_default = defineConfig({
-  branch: "main",
-  clientId: null,
-  token: null,
+  branch: process.env.BRANCH || process.env.HEAD || process.env.GIT_BRANCH || process.env.VERCEL_GIT_COMMIT_REF || "main",
+  clientId: process.env.TINA_CLIENT_ID || process.env.NEXT_PUBLIC_TINA_CLIENT_ID || null,
+  token: process.env.TINA_TOKEN ?? null,
   build: {
     outputFolder: "admin",
     publicFolder: "public"
@@ -169,7 +169,8 @@ var config_default = defineConfig({
               { type: "string", name: "noDescriptionFallback", label: "\u05D8\u05E7\u05E1\u05D8 \u05DB\u05E9\u05D0\u05D9\u05DF \u05EA\u05D9\u05D0\u05D5\u05E8" },
               { type: "string", name: "pointsOfInterestTitle", label: "\u05DB\u05D5\u05EA\u05E8\u05EA \u05E0\u05E7\u05D5\u05D3\u05D5\u05EA \u05E2\u05E0\u05D9\u05D9\u05DF" },
               { type: "string", name: "weatherTitle", label: "\u05DB\u05D5\u05EA\u05E8\u05EA \u05DE\u05D6\u05D2 \u05D0\u05D5\u05D5\u05D9\u05E8" },
-              { type: "string", name: "mapTitle", label: "\u05DB\u05D5\u05EA\u05E8\u05EA \u05DE\u05E4\u05EA \u05D4\u05E0\u05EA\u05D9\u05D1" },
+              { type: "string", name: "mapTitle", label: "\u05DB\u05D5\u05EA\u05E8\u05EA \u05DE\u05E4\u05EA \u05D4\u05E0\u05EA\u05D9\u05D1 (\u05DC\u05D0 \u05D1\u05E9\u05D9\u05DE\u05D5\u05E9 \u2013 \u05D4\u05E9\u05EA\u05DE\u05E9 \u05D1\u05D2\u05DC\u05E8\u05D9\u05D9\u05EA \u05EA\u05DE\u05D5\u05E0\u05D5\u05EA)" },
+              { type: "string", name: "destinationGalleryTitle", label: "\u05DB\u05D5\u05EA\u05E8\u05EA \u05D2\u05DC\u05E8\u05D9\u05D9\u05EA \u05EA\u05DE\u05D5\u05E0\u05D5\u05EA (\u05D9\u05E2\u05D3)" },
               { type: "string", name: "featuresTitle", label: "\u05DB\u05D5\u05EA\u05E8\u05EA \u05DE\u05D0\u05E4\u05D9\u05D9\u05E0\u05D9\u05DD \u05D5\u05DE\u05EA\u05E7\u05E0\u05D9\u05DD (\u05D0\u05D5\u05E0\u05D9\u05D9\u05D4)" },
               { type: "string", name: "specsTitle", label: "\u05DB\u05D5\u05EA\u05E8\u05EA \u05DE\u05E4\u05E8\u05D8 \u05D8\u05DB\u05E0\u05D9" },
               { type: "string", name: "specsLength", label: "\u05EA\u05D5\u05D5\u05D9\u05EA \u05D0\u05D5\u05E8\u05DA" },
@@ -252,7 +253,14 @@ var config_default = defineConfig({
               { type: "string", name: "description", label: "\u05EA\u05D9\u05D0\u05D5\u05E8", ui: { component: "textarea" } },
               { type: "image", name: "image", label: "\u05EA\u05DE\u05D5\u05E0\u05D4" },
               { type: "string", name: "weather", label: "\u05DE\u05D6\u05D2 \u05D0\u05D5\u05D5\u05D9\u05E8 \u05DE\u05DE\u05D5\u05E6\u05E2 (\u05DC\u05DE\u05E9\u05DC: \u05E7\u05D9\u05E5 12\xB0C - 18\xB0C | \u05D7\u05D5\u05E8\u05E3 -2\xB0C - 4\xB0C)", ui: { component: "textarea" } },
-              { type: "image", name: "mapImage", label: "\u05EA\u05DE\u05D5\u05E0\u05EA \u05DE\u05E4\u05EA \u05D4\u05E0\u05EA\u05D9\u05D1" },
+              { type: "image", name: "mapImage", label: "\u05EA\u05DE\u05D5\u05E0\u05D4 \u05D1\u05D5\u05D3\u05D3\u05EA (\u05D0\u05DD \u05D0\u05D9\u05DF \u05D2\u05DC\u05E8\u05D9\u05D4 \u2013 \u05DC\u05D0 \u05D7\u05D5\u05D1\u05D4)" },
+              {
+                type: "image",
+                name: "gallery",
+                label: "\u05D2\u05DC\u05E8\u05D9\u05D9\u05EA \u05EA\u05DE\u05D5\u05E0\u05D5\u05EA",
+                list: true,
+                description: "\u05EA\u05DE\u05D5\u05E0\u05D5\u05EA \u05DC\u05D9\u05E2\u05D3 \u2013 \u05DE\u05D5\u05E6\u05D2\u05D5\u05EA \u05D1\u05DE\u05E7\u05D5\u05DD \u05DE\u05E4\u05EA \u05D4\u05E0\u05EA\u05D9\u05D1. \u05DE\u05D5\u05DE\u05DC\u05E5 \u05DC\u05D4\u05D5\u05E1\u05D9\u05E3 \u05DB\u05DE\u05D4 \u05EA\u05DE\u05D5\u05E0\u05D5\u05EA."
+              },
               {
                 type: "string",
                 name: "pointsOfInterest",

@@ -7,12 +7,19 @@
     "cruiseLinesTitleSuffix": "",
     "testimonials": [
       {
-        "name": "ליאור",
-        "text": "כ"
+        "name": "משפחת לוי",
+        "text": "\"הקרוז בים התיכון היה פשוט מושלם. הילדים נהנו מכל רגע והשירות של הצוות היה מעל ומעבר.\"\n\n",
+        "date": "אוגוסט 2025"
+      },
+      {
+        "name": "דני ומיכל",
+        "text": "\"ירח הדבש שלנו באיים הקריביים היה חלומי. תודה על ההמלצה על האונייה, היא הייתה בדיוק מה שחיפשנו.\"\n\n",
+        "date": "ינואר 2026"
       }
     ],
     "ourStoryParagraph1": "",
-    "contactPlaceholderEmail": "lynrtrbw@gmail.com"
+    "contactPlaceholderEmail": "",
+    "contactPhoneValue": ""
   },
   "detailPageLabels": {
     "aboutTitle": "אודות"
@@ -27,40 +34,392 @@
     "clearSearch": "נקה חיפוש"
   },
   "homepageShipIds": [
-    "lior555555"
+    "Icon of the Seas",
+    "Odyssey of the Seas",
+    "Queen Mary 2",
+    "Star Flyer"
   ],
   "blogPageLabels": {
     "titlePrefix": "בלוג"
   },
   "homepageBlogPostIds": [
-    "lior55555"
+    "הסודות של הים התיכון"
+  ],
+  "destinations": [
+    {
+      "id": "Alaska",
+      "title": "אלסקה הפראית",
+      "description": "מפגש מרגש עם קרחונים מתנפצים, לווייתנים גדולי-סנפיר וטבע בתולי שאין שני לו.",
+      "image": "/uploads/Alaska1.jpg",
+      "weather": "מאי-ספטמבר: 10°C - 18°C",
+      "mapImage": "/uploads/Alaska1.jpg",
+      "pointsOfInterest": [
+        "מפרץ הקרחונים",
+        "מעבר הפנים",
+        "קרחון מנדנהול",
+        "ג׳ונו"
+      ]
+    },
+    {
+      "id": "The Caribbean Islands",
+      "title": "האיים הקריביים",
+      "description": "גן עדן טרופי של מים בצבע טורקיז, חולות לבנים וקצב חיים רגוע תחת עצי הקוקוס.\n\n",
+      "image": "/uploads/The Caribbean Islands.jpg",
+      "weather": "כל השנה: 24°C - 30°C\n\n",
+      "mapImage": "/uploads/The Caribbean Islands.jpg",
+      "gallery": [
+        "/uploads/The Caribbean Islands.jpg"
+      ],
+      "pointsOfInterest": [
+        "איי בהאמה",
+        "סנט לוסיה",
+        "ג׳מייקה",
+        "קוזומל"
+      ]
+    },
+    {
+      "id": "The Classic Mediterranean",
+      "title": "הים התיכון הקלאסי",
+      "description": "ערש התרבות המערבית. מהחופים הלבנים של יוון ועד לנמלים ההיסטוריים של איטליה וצרפת.\n\n",
+      "image": "/uploads/The Classic Mediterranean.jpg",
+      "weather": "קיץ: 25°C - 32°C | חורף: 10°C - 16°C\n\n",
+      "mapImage": "/uploads/The Classic Mediterranean.jpg",
+      "pointsOfInterest": [
+        "חוף אמלפי",
+        "ברצלונה",
+        "סנטוריני",
+        "הריביירה הצרפתית"
+      ]
+    },
+    {
+      "id": "Norway",
+      "title": "הפיורדים של נורווגיה",
+      "description": "מסע בין צוקים אדירים, מפלים שוצפים וכפרים ציוריים השוכנים לחופי הפיורדים העמוקים בעולם.\n\n",
+      "image": "/uploads/The Fjords of Norway.jpg",
+      "weather": "קיץ: 12°C - 18°C | חורף: -2°C - 4°C\n\n",
+      "mapImage": "/uploads/The Fjords of Norway.jpg",
+      "pointsOfInterest": [
+        "גייראנגרפיורד",
+        "ברגן העתיקה",
+        "קרחון בריקסדאל",
+        "מפלי שבע האחיות"
+      ]
+    },
+    {
+      "id": "The South Pacific Ocean",
+      "title": "דרום האוקיינוס השקט",
+      "description": "האיים המרוחקים והיפים בעולם. לגונות כחולות, שוניות אלמוגים ותרבות פולינזית עשירה.\n\n",
+      "image": "/uploads/The South Pacific Ocean.avif",
+      "weather": "כל השנה: 25°C - 29°C\n\n",
+      "mapImage": "/uploads/The South Pacific Ocean.avif",
+      "pointsOfInterest": [
+        "בורה בורה",
+        "טהיטי",
+        "איי קוק",
+        "פיג׳י"
+      ]
+    },
+    {
+      "id": "The Baltic Sea",
+      "title": "הים הבלטי",
+      "description": "בירות צפוניות מפוארות, ארכיטקטורה מלכותית והיסטוריה עשירה של ערי הנמל.\n\n",
+      "image": "/uploads/הים הבלטי.png",
+      "weather": "קיץ: 18°C - 24°C\n\n",
+      "mapImage": "/uploads/The South Pacific Ocean.avif",
+      "pointsOfInterest": [
+        "שטוקהולם",
+        "קופנהגן",
+        "הלסינקי",
+        "טאלין"
+      ]
+    },
+    {
+      "id": "Japan and the Far East",
+      "title": "יפן והמזרח הרחוק",
+      "description": "שילוב מרתק בין מסורת עתיקה לטכנולוגיה עתידנית, מקדשים שלווים וערים תוססות.\n\n",
+      "image": "/uploads/יפן והמזרח.jpg",
+      "weather": "אביב: 15°C - 22°C | סתיו: 14°C - 20°C\n\n",
+      "mapImage": "/uploads/יפן והמזרח הרחוק.webp",
+      "pointsOfInterest": [
+        "קיוטו",
+        "אוסקה",
+        "טוקיו",
+        "הר פוג׳י"
+      ]
+    },
+    {
+      "id": "Antarctica",
+      "title": "אנטארקטיקה - היבשת הלבנה",
+      "description": "המסע האולטימטיבי לקצה העולם. ממלכה של קרח, פינגווינים ושקט אינסופי.\n\n",
+      "image": "/uploads/Antarctica.jpg",
+      "weather": "נובמבר-מרץ: -5°C - 2°C\n\n",
+      "mapImage": "/uploads/Antarctica.jpg",
+      "pointsOfInterest": [
+        "תעלת למייר",
+        "דרום שטלנד",
+        "אי פיטרמן",
+        "מפרץ התקווה"
+      ]
+    },
+    {
+      "id": "South America and Brazil",
+      "title": "דרום אמריקה וברזיל",
+      "description": "קצב הסמבה, יערות האמזונס והקרחונים של פטגוניה. יבשת של ניגודים מרהיבים.\n\n",
+      "image": "/uploads/דרום אמריקה וברזיל.jpg",
+      "weather": "משתנה לפי האזור\n\n",
+      "mapImage": "/uploads/דרום אמריקה וברזיל.jpg",
+      "pointsOfInterest": [
+        "ריו דה ז׳נרו",
+        "בואנוס איירס",
+        "מיצר מגלן",
+        "מפלי האיגואסו"
+      ]
+    },
+    {
+      "id": "Dubai and the Americas",
+      "title": "דובאי והאמירויות",
+      "description": "פאר מודרני בלב המדבר. גורדי שחקים עתידניים, שווקים מסורתיים וחופים זהובים.\n\n",
+      "image": "/uploads/דובאי מרינה.jpeg",
+      "weather": "חורף: 20°C - 28°C | קיץ: 35°C+\n\n",
+      "mapImage": "/uploads/דובאי מרינה.jpeg",
+      "gallery": [
+        "/uploads/דובאי מרינה.jpeg"
+      ],
+      "pointsOfInterest": [
+        "בורג׳ חליפה",
+        "מסגד השייח׳ זאיד",
+        "אי התמרים",
+        "דובאי מרינה"
+      ]
+    }
   ],
   "ships": [
     {
-      "id": "lior555555",
-      "name": "יםייי",
-      "cruiseLine": "ליאור טרבלוס ",
-      "description": "גככככככככ",
-      "speed": "11",
-      "capacity": "1000000",
+      "id": "Symphony of the Seas",
+      "name": "Symphony of the Seas",
+      "cruiseLine": "Royal Caribbean",
+      "description": "אוניית הנוסעים הגדולה בעולם בעת השקתה (2018). פארק שעשועים, זירת החלקה על הקרח, טיילת Boardwalk ואזור Central Park פנימי עם צמחייה אמיתית.\n\n",
+      "speed": "22 קשר",
+      "capacity": "6,680 נוסעים",
+      "length": "362 מטר",
+      "tonnage": "228,081 טון",
       "features": [
-        "אוכל",
-        "ים"
+        "פארק שעשועים",
+        "זירת החלקה על הקרח",
+        "אזור Central Park פנימי",
+        "מסעדות שף רבות"
       ],
-      "image": "/uploads/763792fa9914521455e88aa3b47f52e0.png",
+      "image": "/uploads/Ships/Symphony of the Seas.jpg",
       "gallery": [
-        "/uploads/763792fa9914521455e88aa3b47f52e0.png",
-        "/uploads/763792fa9914521455e88aa3b47f52e0.png"
+        "/uploads/Ships/Symphony of the Seas.jpg"
       ]
+    },
+    {
+      "id": "Odyssey of the Seas",
+      "name": "Odyssey of the Seas",
+      "cruiseLine": "Royal Caribbean",
+      "description": "אוניית Quantum Ultra Class הפועלת מאירופה והקריביים. סימולטור צניחה חופשית, מצלמת תצפית בגובה 90 מטר ומופעים מהשורה הראשונה.\n\n",
+      "speed": "22 קשר",
+      "capacity": "4,198 נוסעים",
+      "length": "347 מטר",
+      "tonnage": "167,704 טון",
+      "features": [
+        "RipCord – סימולטור צניחה",
+        "North Star – מצלמת תצפית מעל הים",
+        "SeaPlex – מגרש ספורט מתקדם",
+        "Two70 – מופעים חדשניים"
+      ],
+      "image": "/uploads/Ships/Symphony of the Seas.jpg",
+      "gallery": [
+        "/uploads/Ships/Symphony of the Seas.jpg"
+      ]
+    },
+    {
+      "id": "MS Roald Amundsen",
+      "name": "MS Roald Amundsen",
+      "cruiseLine": "Hurtigruten",
+      "description": "ספינת משלחות היברידית ראשונה בעולם, פועלת באלסקה, אנטארקטיקה ואיים מרוחקים. עיצוב נורדי, מסעדות גורמה ומרפסות תצפית פנורמיות.\n\n",
+      "speed": "15 קשר",
+      "capacity": "530 נוסעים",
+      "length": "140 מטר",
+      "tonnage": "20,889 טון",
+      "features": [
+        "מנוע היברידי",
+        "סאונה וחלונות זכוכית",
+        "מרפסות תצפית 360°",
+        "מסעדות גורמה סקנדינביות"
+      ],
+      "image": "/uploads/Ships/Symphony of the Seas.jpg"
+    },
+    {
+      "id": "Scenic Eclipse",
+      "name": "Scenic Eclipse",
+      "cruiseLine": "Scenic Luxury Cruises",
+      "description": "יאכטת משלחות \"6 כוכבים\" עם הצוללת והמסוק האישיים שלה. 10 מסעדות, ספא יוקרתי ושירות אישי לכל אורח.\n\n",
+      "speed": "17 קשר",
+      "capacity": "228 נוסעים",
+      "length": "168 מטר",
+      "tonnage": "17,545 טון",
+      "features": [
+        "צוללת מחקר",
+        "מסוק תצפית",
+        "ספא 550 מ\"ר",
+        "מסעדות גורמה"
+      ],
+      "image": "/uploads/Ships/Symphony of the Seas.jpg",
+      "gallery": [
+        "/uploads/Ships/Symphony of the Seas.jpg"
+      ]
+    },
+    {
+      "id": "Star Flyer",
+      "name": "Star Flyer",
+      "cruiseLine": "Star Clippers",
+      "description": "ספינת מפרשים קלאסית עם 4 תרנים ו-36 מפרשים. חוויית שיט אותנטית בים התיכון והקריביים.\n\n",
+      "speed": "17 קשר (מפרשים)",
+      "capacity": "170 נוסעים",
+      "length": "115 מטר",
+      "tonnage": "2,298 טון",
+      "features": [
+        "מפרשים מסורתיים",
+        "סיפון עץ טיק",
+        "שחייה ישירות מהים",
+        "בר תורן"
+      ],
+      "image": "/uploads/Ships/Symphony of the Seas.jpg",
+      "gallery": [
+        "/uploads/Ships/Symphony of the Seas.jpg"
+      ]
+    },
+    {
+      "id": "MSC Seashore",
+      "name": "MSC Seashore",
+      "cruiseLine": "MSC Cruises",
+      "description": "אוניית Seaside EVO Class המונעת ב-LNG. טיילת ים-תיכונית ארוכה, מגלשות מים ואזור Yacht Club אקסקלוסיבי.\n\n",
+      "speed": "17 קשר (מפרשים)",
+      "capacity": "170 נוסעים",
+      "length": "339 מטר",
+      "tonnage": "2,298 טון",
+      "features": [
+        "טיילת ים-תיכונית פתוחה",
+        "מגלשות מים",
+        "בריכות Infinity",
+        "Yacht Club פרטי"
+      ],
+      "image": "/uploads/Ships/Symphony of the Seas.jpg",
+      "gallery": [
+        "/uploads/Ships/Symphony of the Seas.jpg"
+      ]
+    },
+    {
+      "id": "Norwegian Encore",
+      "name": "Norwegian Encore",
+      "cruiseLine": "Norwegian Cruise Line",
+      "description": "אוניית Breakaway Plus עם מסלול גו-קרטינג רב-קומתי, פארק שעשועים ומופעי Broadway מהשורה הראשונה.\n\n",
+      "speed": "22 קשר",
+      "capacity": "3,998 נוסעים",
+      "length": "333 מטר",
+      "tonnage": "169,116 טון",
+      "features": [
+        "מסלול גו-קרטינג",
+        "קיר טיפוס",
+        "מופעי Broadway",
+        "Freestyle Dining"
+      ],
+      "image": "/uploads/Ships/Symphony of the Seas.jpg",
+      "gallery": [
+        "/uploads/Ships/Symphony of the Seas.jpg"
+      ]
+    },
+    {
+      "id": "Queen Mary 2",
+      "name": "Queen Mary 2",
+      "cruiseLine": "Cunard Line",
+      "description": "אוניית האוקיינוס היחידה בעולם עדיין בשירות פעיל. חציית אוקיינוס קלאסית, עיצוב ארט-דקו, תה מנחה ומופעי נשפים.\n\n",
+      "speed": "30 קשר",
+      "capacity": "2,691 נוסעים",
+      "length": "345 מטר",
+      "tonnage": "148,528 טון",
+      "features": [
+        "חציית אוקיינוס",
+        "תה מנחה מסורתי",
+        "אולם נשפים",
+        "פלנטריום"
+      ],
+      "image": "/uploads/Ships/Symphony of the Seas.jpg",
+      "gallery": [
+        "/uploads/Ships/Symphony of the Seas.jpg"
+      ]
+    },
+    {
+      "id": "Silver Spirit",
+      "name": "Silver Spirit",
+      "cruiseLine": "Silversea Cruises",
+      "description": "ספינה המשלבת אלגנטיות אירופאית עם שירות ללא פשרות. חוויה קולינרית יוצאת דופן.\n\n",
+      "speed": "19 קשר",
+      "capacity": "600 נוסעים",
+      "length": "210 מטר",
+      "tonnage": "36,000 טון",
+      "features": [
+        "ספריית מוזיקה",
+        "סיפון תצפית",
+        "מסעדת גורמה",
+        "מרכז בריאות"
+      ],
+      "image": "/uploads/Ships/Symphony of the Seas.jpg",
+      "gallery": [
+        "/uploads/Ships/Symphony of the Seas.jpg"
+      ]
+    },
+    {
+      "id": "Icon of the Seas",
+      "name": "Icon of the Seas",
+      "cruiseLine": "Royal Caribbean",
+      "description": "אחת מאוניות הנוסעים הגדולות והחדשות בעולם, פארק מים עצום, רובע משפחות ואזורי יוקרה שקטים למבוגרים בלבד.\n\n",
+      "speed": "7,600 נוסעים",
+      "capacity": "22 קשר",
+      "length": "365 מטר",
+      "tonnage": "250,800 טון",
+      "features": [
+        "פארק מים מהגדולים בים",
+        "שכונות נושא שונות על הסיפון",
+        "בריכה אינסופית עליונה",
+        "קיר טיפוס ענק"
+      ],
+      "image": "/uploads/Ships/Symphony of the Seas.jpg",
+      "gallery": [
+        "/uploads/Ships/Symphony of the Seas.jpg"
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "question": "האם המחיר כולל טיסות?",
+      "answer": "המחירים המוצגים באתר הם עבור הקרוז בלבד. המומחים שלנו ישמחו להציע לכם חבילות הכוללות טיסות והעברות בהתאמה אישית.\n"
+    },
+    {
+      "question": "מה כולל המחיר של הקרוז?",
+      "answer": "המחיר כולל לינה בחדר שבחרתם, ארוחות מלאות (פנסיון מלא), שימוש במתקני האונייה (בריכות, חדר כושר) ומופעי בידור.\n"
+    },
+    {
+      "question": "האם צריך ויזה להפלגה?",
+      "answer": "דרישות הוויזה משתנות בהתאם ליעד ההפלגה ולאזרחות שלכם. אנחנו ננחה אתכם בדיוק אילו מסמכים עליכם להכין לקראת הנסיעה.\n"
+    },
+    {
+      "question": "האם יש רופא על האונייה?",
+      "answer": "כן, בכל אונייה יש מרכז רפואי מאובזר עם רופאים ואחיות הזמינים 24/7 למקרי חירום.\n"
     }
   ],
   "blogPosts": [
     {
-      "id": "lior55555",
-      "title": "lior",
-      "excerpt": "שלוםן כלגכגכדגכדדגככככככככככ",
+      "id": "הסודות של הים התיכון",
+      "title": "הסודות של הים התיכון ",
+      "excerpt": "מעבר לברצלונה ורומא, ישנם נמלים קטנים ומדהימים שרק ספינות קטנות יכולות להגיע אליהם.\n\n",
       "date": "18/18/1999",
-      "image": "/uploads/763792fa9914521455e88aa3b47f52e0.png"
+      "image": "/uploads/The Classic Mediterranean.jpg",
+      "author": "מערכת האתר",
+      "readTime": "5 דקות ",
+      "body": "מעבר לברצלונה ורומא, ישנם נמלים קטנים ומדהימים שרק ספינות קטנות יכולות להגיע אליהם.\n\n"
     }
   ]
 }
