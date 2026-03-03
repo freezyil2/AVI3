@@ -193,6 +193,17 @@
       ]
     }
   ],
+  "destinations": [
+    {
+      "id": "ENGLEND",
+      "title": "אנגליה",
+      "description": "חווית קרוז מושלמת באיים הבריטים",
+      "weather": "12",
+      "pointsOfInterest": [
+        "סאות'המפטון"
+      ]
+    }
+  ],
   "ships": [
     {
       "id": "Symphony of the Seas",
