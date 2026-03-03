@@ -68,7 +68,6 @@ export default function ContactForm() {
                   <p className="text-xl font-bold">cruise4all.il@gmail.com</p>
                 </div>
               </div>
-              
             </div>
           </div>
 

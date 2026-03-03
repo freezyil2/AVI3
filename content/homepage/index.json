@@ -195,12 +195,149 @@
   ],
   "destinations": [
     {
-      "id": "ENGLEND",
-      "title": "אנגליה",
-      "description": "חווית קרוז מושלמת באיים הבריטים",
-      "weather": "12",
+      "id": "Alaska",
+      "title": "אלסקה הפראית",
+      "description": "מפגש מרגש עם קרחונים מתנפצים, לווייתנים גדולי-סנפיר וטבע בתולי שאין שני לו.",
+      "image": "/uploads/Alaska1.jpg",
+      "weather": "מאי-ספטמבר: 10°C - 18°C",
+      "mapImage": "/uploads/Alaska1.jpg",
       "pointsOfInterest": [
-        "סאות'המפטון"
+        "מפרץ הקרחונים",
+        "מעבר הפנים",
+        "קרחון מנדנהול",
+        "ג׳ונו"
+      ]
+    },
+    {
+      "id": "The Caribbean Islands",
+      "title": "האיים הקריביים",
+      "description": "גן עדן טרופי של מים בצבע טורקיז, חולות לבנים וקצב חיים רגוע תחת עצי הקוקוס.\n\n",
+      "image": "/uploads/The Caribbean Islands.jpg",
+      "weather": "כל השנה: 24°C - 30°C\n\n",
+      "mapImage": "/uploads/The Caribbean Islands.jpg",
+      "gallery": [
+        "/uploads/The Caribbean Islands.jpg"
+      ],
+      "pointsOfInterest": [
+        "איי בהאמה",
+        "סנט לוסיה",
+        "ג׳מייקה",
+        "קוזומל"
+      ]
+    },
+    {
+      "id": "The Classic Mediterranean",
+      "title": "הים התיכון הקלאסי",
+      "description": "ערש התרבות המערבית. מהחופים הלבנים של יוון ועד לנמלים ההיסטוריים של איטליה וצרפת.\n\n",
+      "image": "/uploads/The Classic Mediterranean.jpg",
+      "weather": "קיץ: 25°C - 32°C | חורף: 10°C - 16°C\n\n",
+      "mapImage": "/uploads/The Classic Mediterranean.jpg",
+      "pointsOfInterest": [
+        "חוף אמלפי",
+        "ברצלונה",
+        "סנטוריני",
+        "הריביירה הצרפתית"
+      ]
+    },
+    {
+      "id": "Norway",
+      "title": "הפיורדים של נורווגיה",
+      "description": "מסע בין צוקים אדירים, מפלים שוצפים וכפרים ציוריים השוכנים לחופי הפיורדים העמוקים בעולם.\n\n",
+      "image": "/uploads/The Fjords of Norway.jpg",
+      "weather": "קיץ: 12°C - 18°C | חורף: -2°C - 4°C\n\n",
+      "mapImage": "/uploads/The Fjords of Norway.jpg",
+      "pointsOfInterest": [
+        "גייראנגרפיורד",
+        "ברגן העתיקה",
+        "קרחון בריקסדאל",
+        "מפלי שבע האחיות"
+      ]
+    },
+    {
+      "id": "The South Pacific Ocean",
+      "title": "דרום האוקיינוס השקט",
+      "description": "האיים המרוחקים והיפים בעולם. לגונות כחולות, שוניות אלמוגים ותרבות פולינזית עשירה.\n\n",
+      "image": "/uploads/The South Pacific Ocean.avif",
+      "weather": "כל השנה: 25°C - 29°C\n\n",
+      "mapImage": "/uploads/The South Pacific Ocean.avif",
+      "pointsOfInterest": [
+        "בורה בורה",
+        "טהיטי",
+        "איי קוק",
+        "פיג׳י"
+      ]
+    },
+    {
+      "id": "The Baltic Sea",
+      "title": "הים הבלטי",
+      "description": "בירות צפוניות מפוארות, ארכיטקטורה מלכותית והיסטוריה עשירה של ערי הנמל.\n\n",
+      "image": "/uploads/הים הבלטי.png",
+      "weather": "קיץ: 18°C - 24°C\n\n",
+      "mapImage": "/uploads/The South Pacific Ocean.avif",
+      "pointsOfInterest": [
+        "שטוקהולם",
+        "קופנהגן",
+        "הלסינקי",
+        "טאלין"
+      ]
+    },
+    {
+      "id": "Japan and the Far East",
+      "title": "יפן והמזרח הרחוק",
+      "description": "שילוב מרתק בין מסורת עתיקה לטכנולוגיה עתידנית, מקדשים שלווים וערים תוססות.\n\n",
+      "image": "/uploads/יפן והמזרח.jpg",
+      "weather": "אביב: 15°C - 22°C | סתיו: 14°C - 20°C\n\n",
+      "mapImage": "/uploads/יפן והמזרח הרחוק.webp",
+      "pointsOfInterest": [
+        "קיוטו",
+        "אוסקה",
+        "טוקיו",
+        "הר פוג׳י"
+      ]
+    },
+    {
+      "id": "Antarctica",
+      "title": "אנטארקטיקה - היבשת הלבנה",
+      "description": "המסע האולטימטיבי לקצה העולם. ממלכה של קרח, פינגווינים ושקט אינסופי.\n\n",
+      "image": "/uploads/Antarctica.jpg",
+      "weather": "נובמבר-מרץ: -5°C - 2°C\n\n",
+      "mapImage": "/uploads/Antarctica.jpg",
+      "pointsOfInterest": [
+        "תעלת למייר",
+        "דרום שטלנד",
+        "אי פיטרמן",
+        "מפרץ התקווה"
+      ]
+    },
+    {
+      "id": "South America and Brazil",
+      "title": "דרום אמריקה וברזיל",
+      "description": "קצב הסמבה, יערות האמזונס והקרחונים של פטגוניה. יבשת של ניגודים מרהיבים.\n\n",
+      "image": "/uploads/דרום אמריקה וברזיל.jpg",
+      "weather": "משתנה לפי האזור\n\n",
+      "mapImage": "/uploads/דרום אמריקה וברזיל.jpg",
+      "pointsOfInterest": [
+        "ריו דה ז׳נרו",
+        "בואנוס איירס",
+        "מיצר מגלן",
+        "מפלי האיגואסו"
+      ]
+    },
+    {
+      "id": "Dubai and the Americas",
+      "title": "דובאי והאמירויות",
+      "description": "פאר מודרני בלב המדבר. גורדי שחקים עתידניים, שווקים מסורתיים וחופים זהובים.\n\n",
+      "image": "/uploads/דובאי מרינה.jpeg",
+      "weather": "חורף: 20°C - 28°C | קיץ: 35°C+\n\n",
+      "mapImage": "/uploads/דובאי מרינה.jpeg",
+      "gallery": [
+        "/uploads/דובאי מרינה.jpeg"
+      ],
+      "pointsOfInterest": [
+        "בורג׳ חליפה",
+        "מסגד השייח׳ זאיד",
+        "אי התמרים",
+        "דובאי מרינה"
       ]
     }
   ],
